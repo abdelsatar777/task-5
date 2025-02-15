@@ -8,21 +8,22 @@ class CustomCard1 extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 10.0),
       child: Container(
-        width: 150,
-        height: 150,
+        width: 120,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(200),
-        ),
+            borderRadius: BorderRadius.circular(220), color: Colors.black),
         child: Stack(
+          fit: StackFit.expand,
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(200),
+              borderRadius: BorderRadius.circular(220),
               child: Image.asset(
-                'assets/WhatsApp Image 2024-07-03 at 19.56.48_ae64950a.jpg',
+                'assets/img/wallpaper.jpg',
+                fit: BoxFit.cover,
+                //give opacity to image
+                
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 70.0, left: 50),
+            Center(
               child: Text(
                 'Health',
                 style: TextStyle(

@@ -27,8 +27,8 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                height: 166,
+              SizedBox(
+                height: 120,
                 width: double.infinity,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
